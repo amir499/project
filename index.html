@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amir Hossain – Virtual Assistant & Web Developer</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #7c3aed;
+      --accent: #ec4899;
+      --dark: #0b0b17;
+      --light: #e0e7ff;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--dark);
+      color: var(--light);
+      margin: 0;
+      padding: 0;
+    }
+    .main-container {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+      padding: 2rem 1rem 7rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+    }
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #fff, #ec4899);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .commission-note {
+      background: rgba(37, 211, 102, 0.15);
+      border: 2px solid #25D366;
+      border-radius: 12px;
+      padding: 1rem;
+      margin: 1.5rem auto;
+      max-width: 600px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .phone-number {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #25D366;
+      margin: 1.5rem 0;
+      display: block;
+    }
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      transition: all 0.3s;
+      box-shadow: 0 8px 25px rgba(37,211,102,0.4);
+    }
+    .btn-whatsapp:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 40px rgba(37,211,102,0.6);
+    }
+    .services {
+      padding: 3rem 1rem;
+    }
+    .card {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(124,58,237,0.3);
+      border-radius: 1.5rem;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      transition: all 0.4s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: #ec4899;
+    }
+    .card i {
+      font-size: 3rem;
+      color: #ec4899;
+      margin-bottom: 1rem;
+    }
+    .social-icons a {
+      color: white;
+      font-size: 2.5rem;
+      margin: 0 0.8rem;
+      transition: all 0.3s;
+    }
+    .social-icons a:hover {
+      color: #ec4899;
+      transform: translateY(-4px) scale(1.15);
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 70px;
+      height: 70px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      z-index: 1000;
+      box-shadow: 0 10px 30px rgba(37,211,102,0.5);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.7); }
+      70% { box-shadow: 0 0 0 20px rgba(37,211,102,0); }
+      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+    .mobile-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #111;
+      padding: 1rem;
+      text-align: center;
+      z-index: 999;
+      border-top: 2px solid #25D366;
+    }
+    @media (min-width: 768px) {
+      .mobile-bar { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+
+    <!-- Hero / Contact Section -->
+    <section class="hero">
+      <h1>Hi, I'm Amir</h1>
+      <p class="fs-4 mb-3">Virtual Assistant & Web Developer</p>
+      
+      <div class="commission-note">
+        ⚡ I work strictly on COMMISSION BASIS only — you pay only when we get results!
+      </div>
+
+      <div class="phone-number">
+        <i class="fab fa-whatsapp me-2"></i> +8801845020499
+      </div>
+
+      <p class="lead mb-4">
+        Specializing in websites that convert, business automation, lead generation & growth support.<br>
+        Zero upfront fees — pure performance-based partnership.
+      </p>
+
+      <a href="https://wa.me/8801845020499?text=Hello%20Amir%2C%20interested%20in%20commission-based%20collaboration..." 
+         class="btn btn-whatsapp mb-4" target="_blank">
+        <i class="fab fa-whatsapp me-2"></i> Let's Talk (Commission Only)
+      </a>
+
+      <!-- Social Links -->
+      <div class="social-icons mt-5">
+        <a href="https://facebook.com/amir.hossain.va" target="_blank" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/amir_h_499/link" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/in/md-amir-hossain-173155238/" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://twitter.com/Amir64123" target="_blank" title="Twitter / X">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <h2 class="text-center mb-5 fw-bold fs-1" style="color: #ec4899;">What I Can Do For You (Commission-Based)</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="card text-center">
+            <i class="fas fa-laptop-code"></i>
+            <h4>Web Development & Optimization</h4>
+            <p>Build / fix / optimize WordPress sites, landing pages, e-commerce stores that drive real sales & leads. Commission on results or revenue generated.</p>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card text-center">
+            <i class="fas fa-headset"></i>
+            <h4>Virtual Assistance & Growth Support</h4>
+            <p>Lead generation, admin tasks, automation (Zapier/Make), marketplace scaling, outreach. Paid purely on performance / commission.</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-4 fs-5 fw-bold" style="color: #25D366;">
+        No fixed salary • No hourly rate • Only success-based commission
+      </p>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="text-center py-5">
+      <h3 class="mb-4">Ready for Results-Driven Collaboration?</h3>
+      <p class="fs-5 mb-4">Message me to discuss commission structure & how we can grow together:</p>
+      <div class="phone-number mb-4">
+        <i class="fab fa-whatsapp"></i> +8801845020499
+      </div>
+      <a href="https://wa.me/8801845020499?text=Hi%20Amir%2C%20let's%20talk%20commission-based%20project..." 
+         class="btn btn-whatsapp btn-lg" target="_blank">
+        <i class="fab fa-whatsapp me-2"></i> Start Conversation
+      </a>
+    </section>
+
+  </div> <!-- End main-container -->
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/8801845020499?text=Hello%20Amir%2C%20commission-based%20opportunity..." 
+     class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Mobile Sticky Bar -->
+  <div class="mobile-bar d-md-none">
+    <a href="https://wa.me/8801845020499?text=Hi%20Amir%2C%20commission%20based%20work..." 
+       class="text-white fw-bold fs-5 text-decoration-none">
+       <i class="fab fa-whatsapp me-2 text-success"></i> +8801845020499 – Commission Only
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
